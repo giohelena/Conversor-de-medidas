@@ -2,7 +2,9 @@ function convert(){
     var givenNumber = document.getElementById("givenNumber");
     var transfNumber = givenNumber.value;
 
-    if(document.getElementById("km").checked){
+    if(!transfNumber){
+        alert('Escolha um número para converter!')
+    } else if(document.getElementById("km").checked){
         var convertedNumber = transfNumber /= 1000;
         document.getElementById("convertedNumber").innerHTML = convertedNumber;
     } else if (document.getElementById("hm").checked){

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./index.js"></script>
+    <script src="./conversor.js"></script>
+</head>
+<body>
+    <form class="data" action="/" method="GET">
+
+        <label for="givenNumber">Escolha o número que deseja converter (em metros):</label>
+        <input type="text" id="givenNumber" name="givenNumber">
+
+        <p>Para qual unidade deseja converter o valor escolhido?</p>
+
+        <input type="radio" id="km" name="newUnit">
+        <label for="newUnit">km</label>
+        <input type="radio" id="hm" name="newUnit">
+        <label for="newUnit">hm</label>
+        <input type="radio" id="dam" name="newUnit">
+        <label for="newUnit">dam</label>
+        <input type="radio" id="dm" name="newUnit">
+        <label for="newUnit">dm</label>
+        <input type="radio" id="cm" name="newUnit">
+        <label for="newUnit">cm</label>
+        <input type="radio" id="mm" name="newUnit">
+        <label for="newUnit">mm</label>
+
+        <input type="button" id="submit" value="Converter" onclick="convert()">
+        <p>O novo valor é: <span id="convertedNumber"></span></p>
+    </form>
+</body>
+</html>
